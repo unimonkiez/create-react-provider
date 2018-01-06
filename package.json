@@ -1,6 +1,6 @@
 {
   "name": "create-react-provider",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Creating context provider with ease, can be used as HOC or renderChildren",
   "main": "lib/index.js",
   "scripts": {
