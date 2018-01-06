@@ -1,0 +1,8 @@
+node_modules/
+bin/
+src/
+.editorconfig
+.eslintrc
+.gitignore
+yarn.lock
+.travis.yml
