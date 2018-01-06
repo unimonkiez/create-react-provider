@@ -35,7 +35,10 @@ This library creates a Provider for you to use, and a [Hoc](https://reactjs.org/
   class App extends Component {
     render () {
       return (
-        <ThemeProvider>
+        <ThemeProvider
+          primaryColor="blue"
+          secondaryColor="green"
+        >
           <SomeComponent />
         </ThemeProvider>
       );
@@ -54,7 +57,7 @@ This library creates a Provider for you to use, and a [Hoc](https://reactjs.org/
           render={({ primaryColor: backgroundColor, secondaryColor: titleColor }) => (
             <div style={{ backgroundColor }}>
               <h1 style={{ color: titleColor }}>
-                I'm a title!
+                I am a title!
               </h1>
             </div>
           )}
@@ -83,6 +86,6 @@ This library creates a Provider for you to use, and a [Hoc](https://reactjs.org/
   }
 
   // You can override Hoc props
-  <SomeComponentUsingHoc /> // Will use titleColor from provider
-  <SomeComponentUsingHoc titleColor="red" /> // Will use from given prop
+  <SomeComponentUsingHoc /> // Will use titleColor from provider, in this case "blue"
+  <SomeComponentUsingHoc titleColor="red" /> // Will use from given prop, in this case "red"
   ```
