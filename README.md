@@ -78,7 +78,7 @@ This library creates a Provider for you to use, and a [Hoc](https://reactjs.org/
       return (
         <div style={{ backgroundColor }}>
           <h1 style={{ color: titleColor }}>
-            I'm a title!
+            I am a title!
           </h1>
         </div>
       );
